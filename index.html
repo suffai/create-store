@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Store Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto p-6">
+        <form action="/path/to/your/addShopFunction" method="POST" class="space-y-4">
+            <input type="text" placeholder="Store Name" name="store_name" required
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Owner Name" name="owner_name" required
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="email" placeholder="Email" name="email" required class="w-full px-4 py-2 border rounded-md" />
+            <input type="password" placeholder="Password" name="password" required
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="tel" placeholder="Store Phone No." name="store_contact"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="tel" placeholder="Owner Phone No." name="owner_contact"
+                class="w-full px-4 py-2 border rounded-md" />
+            <select name="status" id="status" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Status?</option>
+                <option value="true">Active</option>
+                <option value="false">Inactive</option>
+            </select>
+            <input type="text" name="store_address" id="store_address" placeholder="Store Address"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" name="area" id="area" placeholder="Area" class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" name="city" id="city" placeholder="City" class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" name="contact_1" id="contact_1" placeholder="Additional Contact info"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" name="contact_2" id="contact_2" placeholder="Additional Contact info"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Store Category" name="store_category"
+                class="w-full px-4 py-2 border rounded-md" />
+            <select name="express_laundry" id="express_laundry" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Express Laundry?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="premium_laundry" id="premium_laundry" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Premium Laundry?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="wash_and_fold" id="wash_and_fold" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Do you provide wash and fold?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="wash_and_iron" id="wash_and_iron" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Do you provide wash and iron?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="ironing" id="ironing" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Do you provide ironing?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="dry_cleaning" id="dry_cleaning" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Do you provide dry cleaning?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="shoe_cleaning" id="shoe_cleaning" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Do you provide shoe cleaning?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <select name="home_textile" id="home_textile" class="w-full px-4 py-2 border rounded-md">
+                <option value="">Do you provide home textile?</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+            <input type="text" placeholder="Your store open time" name="store_open_time"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Your store close time" name="store_close_time"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Your store off days" name="days_off"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Pin code of the area" name="pin_code"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Landmark of the store location" name="landmark"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Your outlets info and location" name="outlets"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Minimum weight of wash and fold" name="Wash_N_fold_min_weight"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Minimum weight of wash and iron" name="Wash_N_iron_min_weight"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Minimum price of wash and fold" name="Wash_N_fold_min_price"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Minimum price of wash and iron" name="Wash_N_iron_min_price"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Wash and fold additional price for per kg"
+                name="Wash_N_fold_additional_price_kg" class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Wash and iron additional price for per kg"
+                name="Wash_N_iron_additional_price_kg" class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Express laundry price" name="express_laundry_price"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Premium laundry price" name="premium_laundry_price"
+                class="w-full px-4 py-2 border rounded-md" />
+            <input type="text" placeholder="Shop" name="shop" value="shop" readOnly
+                class="w-full px-4 py-2 border rounded-md" />
+            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
